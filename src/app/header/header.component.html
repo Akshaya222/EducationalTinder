@@ -1,0 +1,8 @@
+<mat-toolbar class="darkblue"> <span>Educational Tinder</span>
+  <button mat-button  routerLink="/teachers"> Teachers</button>
+<span class="flex-spacer"></span>
+<button mat-button  *ngIf="!user"  routerLink="/login"> Sign in</button>
+<h5 *ngIf="user">{{user.email}}</h5>
+<button mat-button *ngIf="user" (click)="signout()">Sign Out</button>
+</mat-toolbar>
+

@@ -1,0 +1,24 @@
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+h2{
+  text-align: center;
+  font-weight: bold;
+}
+.forgotPassword{
+  text-align: end;
+}
+h5{
+  text-align: center;
+ }
+ small{
+   margin-bottom: 10px;
+   text-align: center;
+ }

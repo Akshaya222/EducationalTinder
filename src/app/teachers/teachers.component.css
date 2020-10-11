@@ -1,0 +1,14 @@
+mat-grid-tile{
+  margin: 10px;
+  border: 1px black solid;
+}
+mat-grid-tile-footer{
+  background-color: rgb(145, 145, 231);
+}
+.material-icons{
+  font-size:15px!important;
+}
+mat-grid-tile-header h4{
+  background-color: #8da2c2;
+  padding: 2px;
+}

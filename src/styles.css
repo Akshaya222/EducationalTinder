@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '../node_modules/font-awesome/css/font-awesome.css';
+:root{
+  --darkblue:#0c0cb9;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+.darkblue{
+  background-color: var(--darkblue);
+  color: white;
+}
+.image{
+  width:200px;
+  height: 190px;
+}
+
+.container{
+  margin: 20px;
+  display: flex;
+}
+.flex-spacer{
+  flex: 1 1 auto;
+}
+.box{
+  height: 370px;
+  width: 350px;
+  background-color:#f0ebeb;
+  margin: 0 auto;
+  margin-top: 5rem;
+  border-radius: 5%;
+  box-shadow: 0 0 18px#a69f9f;
+  padding: 20px;
+
+}
+.formControl{
+  min-width: 315px;
+  min-height: 40px;
+}
+.btn-primary{
+  width: 315px;
+  margin: 6px 0;
+}
+.redirectToLogin{
+  align-items: center;
+  margin-top: 15px;
+  text-align: center;
+}
+.full-width {
+  width: 95%
+}
+
+.half-width {
+  width: 45%
+}
+
+.form-size {
+  width: 75%
+}

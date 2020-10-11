@@ -1,0 +1,60 @@
+<div class="container" flexLayout="column" >
+<div fxFlex="50" *ngIf="teacher">
+  <mat-card >
+    <mat-card-header>
+      <mat-card-title>Name: {{teacher.name}}</mat-card-title>
+      <mat-card-subtitle>Designation: {{teacher.designation}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src={{teacher.image}} alt="{{teacher.name}}">
+    <mat-card-content>
+      <h3> Qualification: {{teacher.qualification}}</h3>
+      <h3> Subject: {{teacher.subject}}</h3>
+      <h3> Fee: {{teacher.Fees}}</h3>
+      <h3> MailID: {{teacher.mailaddress}}</h3>
+      <h4>Address: {{teacher.address}} </h4>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button [routerLink]="['/teacherdetails',previous]"><span class="fa fa-chevron-left fa-lg"></span></button>
+      <button mat-raised-button (click)="goBack()">BACK</button>
+      <button mat-raised-button >LIKE</button>
+      <button mat-raised-button>SHARE</button>
+      <button mat-button class="favorite"><mat-icon>favorite_outlined</mat-icon></button>
+      <span class="flex-spacer"></span>
+      <button mat-button [routerLink]="['/teacherdetails',next]"><span class="fa fa-chevron-right fa-lg"></span></button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+<div fxFlex="40" fxFlexOffset="10">
+     <h3>Comments</h3>
+     <div  *ngIf="user">
+     <div *ngIf="commentForm.valid">
+      <p>author:{{commentForm.value.author}}</p>
+      <p>rating:{{commentForm.value.rating}}</p>
+      <p>author:{{commentForm.value.comment}}</p>
+      </div>
+     <form novalidate [formGroup]="commentForm"  #cform="ngForm" (ngSubmit)="onSubmit()" class="form-width">
+      <p>
+       <mat-form-field class="half-width">
+         <input matInput formControlName="author" placeholder="author name" type="text" required>
+         <mat-error *ngIf="formErrors.author">{{formErrors.author}}</mat-error>
+       </mat-form-field>
+      </p>
+      <p>
+        <mat-slider min="1" max="5" step="1" formControlName="rating" thumbLabel tickInterval="1" ></mat-slider>
+      </p>
+      <p>
+        <mat-form-field class="full-width">
+          <textarea matInput formControlName="comment" placeholder="Your valuable comment" rows=12 required></textarea>
+          <mat-error *ngIf="formErrors.comment">{{formErrors.comment}}</mat-error>
+        </mat-form-field>
+       </p>
+       <button type="submit" mat-button class="darkblue" [disabled]="commentForm.invalid">Submit</button>
+    </form>
+  </div>
+</div>
+</div>

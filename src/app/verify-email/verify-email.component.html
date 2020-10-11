@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="box">
+    <h4>Thank You for Registering</h4>
+    <div class="formGroup" *ngIf="user">
+      <p>Hi {{user.email}}!!<p>
+      <p class="text-center">We have sent a confirmation email to <strong>{{user.email}}</strong>.</p>
+      <p class="text-center">Please check your email and click on the link to verfiy your email address.</p>
+    </div>
+    <div class="formGroup" [hidden]='user'>
+      <p>Sorry for Inconvience </p>
+      <p>Try again by clicking resend verification email</p>
+    </div>
+    <!-- Calling SendVerificationMail() method using authService Api -->
+    <div class="formGroup">
+      <button type="button" class="btn btn-primary" (click)="resendVerificationmail()">
+        <i class="fas fa-redo-alt"></i>
+        Resend Verification Email
+      </button>
+    </div>
+  <div class="redirectToLogin">
+    <span>Go back to?<strong><span class="redirect" routerLink="/login"> Sign in</span></strong></span>
+  </div>
+ </div>
+</div>
+

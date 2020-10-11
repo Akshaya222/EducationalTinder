@@ -1,0 +1,19 @@
+<div fxLayout="column" fxLayoutGap="10px" class="container">
+  <div fxFlex>
+    <mat-grid-list cols="3" rowHeight="250px">
+      <mat-grid-tile *ngFor="let teacher of teachers"   [routerLink]="['/teacherdetails', teacher.id]">
+        <mat-grid-tile-header>{{teacher.subject}}
+          <span class="flex-spacer"></span>
+          <h4>6.7 <mat-icon>grade</mat-icon></h4>
+
+        </mat-grid-tile-header>
+        <div>
+          <img src={{teacher.image}} class="image">
+          <h3>{{teacher.name}}</h3>
+        </div>
+
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
+

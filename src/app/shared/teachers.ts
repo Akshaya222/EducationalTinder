@@ -1,0 +1,111 @@
+import {Teacher} from './teacher';
+export const TEACHERS :Teacher[]=[
+	{
+	  id:"0",
+	  name:"Enrico Fermi",
+  	designation:"student at IIIT Dharwad",
+  	qualification:"B.tech",
+	  subject:"python",
+	  Fees:700,
+	  mailaddress:"enrico@gmail.com",
+	  image:"/assets/images/enrico.jpg",
+    address:"22 Clark Street,Hyderabad",
+    desciption:"she is a good teacher"	},
+	{
+	id:"1",
+	name:"Nicola thomas",
+	designation:"Proffessor at Impulse Institute",
+	qualification: "P.hd",
+	subject: "Data Structures",
+	Fees:1500,
+	mailaddress:"nicola@gmail.com",
+	image:"../assets/images/nicola.jpeg",
+  address:"Vidya nagar,Hubli",
+  desciption:"she is a good teacher"
+	},
+	{
+	id:"2",
+	name:"Rakesh sharma",
+	designation:"student at KLE University",
+	qualification:" PUC",
+	subject:" Basic C++",
+	Fees:800,
+	mailaddress:"rakesh@gmail.com",
+	image:"/assets/images/rakesh.jpeg",
+  address:"Ashok nagar,Dharwad",
+  desciption:"she is a good teacher"
+	},
+	{
+	id:"3",
+	name: "Sangeetha guptha",
+	designation:"student at Amity University",
+	qualification:" B.sc",
+	subject: "Mathematics",
+	Fees:1000,
+	mailaddress:"sangeetha@gmail.com",
+	image:"/assets/images/sangeetha.jpeg",
+  address:"14 street colony,Dharwad",
+  desciption:"she is a good teacher"
+	},
+	{
+	id:"4",
+	name: "Albert thomas",
+	designation: "Assisstant proffessor at Githam college",
+	qualification: "M.tech",
+	subject:" Algorithms",
+	Fees:1400,
+	mailaddress:"albert@gmail.com",
+	image:"/assets/images/albert.jpeg",
+  address:"18 street colony,vizag",
+  desciption:"she is a good teacher"
+	},
+	{
+	id:"5",
+	name: "Nimisha Agarwal",
+	designation: "student at KL University",
+	qualification: "M.tech",
+	subject:" Databases",
+	Fees:1600,
+	mailaddress:"nimisha@gmail.com",
+	image:"/assets/images/nimisha.jpeg",
+  address:"Gayathri Nagar,Hubli",
+  desciption:"she is a good teacher"
+},
+	{
+	id:"6",
+	name: "William James",
+	designation: "student at Chaitanya University",
+	qualification:" B.tech",
+	subject: "Javascript",
+	Fees:1800,
+	mailaddress:"william@gmail.com",
+	image:"/assets/images/william.jpeg",
+  address:"Chanda Nagar,Dharwad",
+  desciption:"she is a good teacher"
+	},
+	{
+	id:"7",
+	name: "Isabella Sophia",
+	designation: "Assistant proffesor at CBIT",
+	qualification: "M.sc",
+	subject:" Compiler Design",
+	Fees:2000,
+	mailaddress:"isabella@gmail.com",
+	image:"/assets/images/isabella.jpeg",
+  address:"Road No:4,Guntur",
+  desciption:"she is a good teacher"
+	},
+	{
+	id:"8",
+	name: "Oliver Benjamin",
+	designation: "Student at MIT University",
+	qualification: "BBA",
+	subject:"Economics",
+	Fees:900,
+	mailaddress:"oliver@gmail.com",
+	image:"/assets/images/oliver.jpg",
+  address:"Vivek Nagar,Hubli",
+  desciption:"she is a good teacher"
+	},
+
+]
